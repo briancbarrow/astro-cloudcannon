@@ -15,8 +15,5 @@
     "@astrojs/vue": "^0.1.4",
     "astro": "^1.0.0-beta.29",
     "vue": "^3.2.33"
-  },
-  "dependencies": {
-    "@astrojs/netlify": "^0.4.0"
   }
 }
