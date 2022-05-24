@@ -26,7 +26,7 @@ module.exports = {
       url: '/people/{department|slugify}/[slug]/',
 
       // Tells CloudCannon this collection produces output files
-      output: true
+      output: true,
 
       // CloudCannon collection-level configuration
       name: 'Personnel',
