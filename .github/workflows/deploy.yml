@@ -23,14 +23,13 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 14
-        with:
           submodules: true # Fetch Hugo themes (true or recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-        run: npm run install
+      - run: npm run install
 
       - name: Build site
         run: npm run build
