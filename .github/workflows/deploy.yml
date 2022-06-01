@@ -28,6 +28,9 @@ jobs:
           submodules: true # Fetch Hugo themes (true or recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Install dependencies
+        run: npm run install
+
       - name: Build site
         run: npm run build
 
